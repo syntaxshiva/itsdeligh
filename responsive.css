@@ -1,0 +1,650 @@
+/* Base styles for all screens */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 11px;
+  }
+  .menu ul {
+    display: none;
+  }
+  nav {
+    margin-top: 1vh;
+    padding: 3px;
+
+    width: 90%;
+  }
+  nav .navlogo {
+    display: flex;
+    margin-left: 1em;
+  }
+  .menu {
+    button {
+      font-weight: bold;
+      padding: 0px 20px;
+      border-style: none;
+      margin-right: 10px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .page1 .content {
+    h1 {
+      position: relative;
+    }
+    h5 {
+      margin: 0;
+      margin-top: 50px;
+      font-weight: 500;
+    }
+    h1 img {
+      position: absolute;
+      width: 230px;
+      right: 80px;
+      top: 60px;
+    }
+    .cards1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .cards1 div {
+      flex: 0 0 40%; /* Adjust the percentage to fit two elements in one row */
+    }
+    .cards1 div {
+      padding: 5px 10px 5px 10px;
+      margin: 3px 0px 3px 0px;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  .page2 {
+    h1 {
+      font-size: 3em;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 25vh;
+      overflow: hidden;
+    }
+    .overlay {
+      font-size: 1em;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .text-reveal {
+      padding: 50px 20px;
+      font-size: 2rem;
+      display: inline-block;
+    }
+  }
+
+  .page3 {
+    .mainbox {
+      margin-top: 50px;
+      flex-direction: column;
+      justify-content: center;
+      .secbox {
+        div:nth-child(1) {
+          height: 30vh;
+          width: 90vw;
+        }
+        div:nth-child(2) {
+          height: 20vh;
+          width: 80vw;
+        }
+      }
+
+      .appdev {
+        width: 80vw;
+        height: 40vh;
+      }
+    }
+  }
+
+  .page4 {
+    height: auto;
+    .olo {
+      padding: 20px;
+
+      font-weight: 600;
+
+      font-size: 4em;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      width: 90%;
+      height: auto;
+    }
+    .grid-item {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+  }
+
+  .page5 {
+
+    h1{
+      font-size: 4em;
+    }
+    div {
+      flex-direction: column;
+
+      img {
+        margin: 00px 00px 10px 20px;
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 0.3px;
+        transition: 1s ease-out;
+      }
+    }
+  }
+
+  .page6 {
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    text-align: center;
+
+    h1 {
+      margin-top: 20%;
+      font-size: 3em;
+      text-align: center;
+    }
+    p {
+      font-size: 2em;
+      padding: 10px;
+    }
+  }
+
+  .page7 {
+    h2 {
+      font-size: 4em;
+      text-align: center;
+    }
+
+    .aniholder {
+      position: absolute;
+      align-items: center;
+      width: 95%;
+      
+      height: 65vh;
+    }
+  }
+
+  .cardx {
+    padding: 0px;
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+    .show {
+      display: none;
+      margin: 0;
+      margin-right: 0px;
+    }
+    .conte{
+      justify-content: center;
+      align-items: center;
+      
+      height: 90%;
+    width: 90%;
+    }
+  }
+
+  .contentr {
+    font-size: 16px;
+    
+
+    div {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      height: 80vh;
+
+      .info {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          margin: 0;
+          font-size: 3em;
+        }
+      }
+      .cont {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        width: 80%;
+        height: auto;
+        p {
+          margin: 0;
+          margin-bottom: 3px;
+        }
+
+        hr {
+          height: 2px;
+          width: 100%;
+          border: none;
+
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 929px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: 15px;
+  }
+  .menu ul {
+    display: flex;
+  }
+  nav {
+    margin-top: 1vh;
+    padding: 3px;
+
+    width: 90%;
+  }
+  nav .navlogo {
+    display: flex;
+    margin-left: 1em;
+  }
+  .menu {
+    button {
+      font-weight: bold;
+      padding: 0px 20px;
+      border-style: none;
+      margin-right: 10px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .page1 .content {
+    h1 {
+      position: relative;
+    }
+    h5 {
+      margin: 0;
+      margin-top: 50px;
+      font-weight: 500;
+    }
+    h1 img {
+      display: none;
+      position: absolute;
+      width: 230px;
+      right: 80px;
+      top: 60px;
+    }
+    .cards1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .cards1 div {
+      flex: 0 0 40%; /* Adjust the percentage to fit two elements in one row */
+    }
+    .cards1 div {
+      padding: 5px 10px 5px 10px;
+      margin: 3px 0px 3px 0px;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  .page2 {
+    h1 {
+      font-size: 3em;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 25vh;
+      overflow: hidden;
+    }
+    .overlay {
+      font-size: 1em;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .text-reveal {
+      padding: 50px 20px;
+      font-size: 2rem;
+      display: inline-block;
+    }
+  }
+
+  .page3 {
+    .mainbox {
+      margin-top: 50px;
+      flex-direction: column;
+      justify-content: center;
+      .secbox {
+        div:nth-child(1) {
+          height: 30vh;
+          width: 90vw;
+        }
+        div:nth-child(2) {
+          height: 20vh;
+          width: 80vw;
+        }
+      }
+
+      .appdev {
+        width: 80vw;
+        height: 40vh;
+      }
+    }
+  }
+
+  .page4 {
+    height: auto;
+    .olo {
+      padding: 20px;
+
+      font-weight: 600;
+
+      font-size: 4em;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      width: 90%;
+      height: auto;
+    }
+    .grid-item {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+  }
+
+  .page5 {
+
+    div {
+      
+      img {
+
+        margin: 10px;
+        width: 70%;
+        
+        border-radius: 20px;
+        border-style: solid;
+        border-color: gray;
+        border-width: 0.3px;
+        transition: 1s ease-out;
+      }
+    }
+  }
+  .page5 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this to center items horizontally */
+  }
+  .page6 {
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    text-align: center;
+
+    h1 {
+      margin-top: 20%;
+      font-size: 4em;
+      text-align: center;
+    }
+    p {
+      font-size: 2em;
+      padding: 10px;
+    }
+  }
+
+  .page7 {
+    h2 {
+      font-size: 5em;
+    }
+
+    .aniholder {
+      position: absolute;
+      
+      text-align: center;
+      width: 95%;
+      height: 75vh;
+      
+    }
+  }
+
+  .cardx {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+    .show {
+      display: none;
+      margin: 0;
+      margin-right: 0px;
+    }
+    .conte{
+      justify-content: center;
+      align-items: center;
+      
+      height: 90%;
+    width: 90%;
+    }
+  }
+
+  .contentr {
+    font-size: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      height: 80vh;
+
+      .info {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          margin: 0;
+          font-size: 3em;
+        }
+      }
+      .cont {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        width: 80%;
+        height: auto;
+        p {
+          margin: 0;
+          margin-bottom: 3px;
+        }
+
+        hr {
+          height: 2px;
+          width: 100%;
+          border: none;
+
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 930px)and (max-width: 1439px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+ 
+  body {
+    
+  }
+  .page4{
+    .grid-container {
+      
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(2, 2fr);
+      height: fit-content;
+      
+  }
+  .grid-item {
+  margin: 20px;  
+  }
+  }
+
+  .page6{
+    
+    h1{
+      margin-top: 20%;
+      font-size: 4em;
+    }
+    p{
+      font-size: 2em;
+      padding: 0px 1em;
+    }
+    
+  }
+
+  .page7{
+
+ 
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    h2{
+      font-size: 5em;
+     }
+  
+    .aniholder{
+      position: absolute;
+      
+      width: 95%;
+      height: 85vh;
+    }
+    
+  }
+
+  .cardx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  
+    h1{
+      font-size: 4em;
+    }
+    .show{
+      
+      width: 30%;
+      height: 90%;
+      margin-right: 20px;
+      iframe {
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transform: rotate(-5deg);
+      }
+  
+    }
+    .conte{
+      
+      height: 90%;
+      width: 65%;
+      
+    }
+  }
+  
+  .page2{
+    .overlay{
+      font-size: 15px;
+    }
+  }
+  
+  
+  
+}
+
+/* Extra large devices (4k screens, 1440px and up) */
+@media only screen and (min-width: 2000px) {
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    max-width: 1920px;
+  }
+
+  }
+

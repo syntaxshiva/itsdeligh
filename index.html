@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="noice"></div>
+    <nav>
+        <div class="navlogo"><img src="assets/car-wash.png" alt="">
+            <h1>Its Deligh</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+
+            </ul>
+            <button onclick="window.open('/store.html')"><img src="assets/carts.png" alt="Store Icon"> Store</button>
+
+        </div>
+        
+    </nav>
+    <section id="home" class="page1">
+        <div class="content">
+            <h2>We Make Business</h2>
+            <h1>StandOut the <span><img src="assets/doodle.png" alt=""> Market</span></h1>
+            <h5>Website and App Developers</h5>
+            <Button onclick="window.open('https://wa.me/+919450129733?text=' + encodeURIComponent('Hello! i need a service'), '_blank')">Say Hi!</Button>
+            <div class="cards1">
+
+                <div>
+                    <img src="assets/internet.png" alt="">
+                    <p>Website Development</p>
+                </div>
+                <div>
+                    <img src="assets/app-store.png" alt="">
+                    <p>Adroid/ios Apps</p>
+                </div>
+                <div>
+                    <img src="assets/portfolio.png" alt="">
+                    <p>Portfolio Design</p>
+                </div>
+                <div>
+                    <img src="assets/shopify.png" alt="">
+                    <p>Shopify Store</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page2">
+
+        <div class="video-container">
+            <!-- Video with autoplay, loop, muted -->
+            <video autoplay loop muted playsinline>
+                <source src="assets/veo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay with text or other content -->
+            <div class="overlay">
+                <h1>Need a Tech Solution</h1>
+                <h2>Take #Help</h2>
+            </div>
+        </div>
+
+        <div class="text-reveal">
+            <p>Our team is dedicated to delivering exceptional tech solutions that inspire confidence and trust. We are committed to helping your business thrive with innovative and reliable services tailored to your needs.</p>
+        </div>
+
+    </section>
+    <section class="page3">
+
+        <div class="mainbox">
+            <div class="secbox">
+                <div>
+                    <div class="overlay1">
+
+                        <h1>WEBSITE</h1>
+                        <h2>DEVELOPMENT</h2>
+                        <!-- <h3>Explore More</h3> -->
+                    </div>
+                    <video autoplay loop muted>
+                        <source src="assets/v2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div>
+
+                    <div class="overlay2">
+
+                        <h1>IT Solutions</h1>
+                        <!-- <h3>Explore More</h3> -->
+                    </div>
+                    <video autoplay loop muted>
+                        <source src="assets/v3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="appdev">
+                <div class="overlay">
+
+                    <h1>APP</h1>
+                    <h2>DEVELOPMENT</h2>
+                    <!-- <h3>Explore More</h3> -->
+                </div>
+                <video autoplay loop muted>
+                    <source src="assets/v1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="story" class="page4">
+        <H1 class="olo">We do what you <br>
+            need just ask help
+        </H1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>"Our portfolio designs <img src="assets/portfolio.png" alt=""> help students secure top jobs."</p>
+                <h1>Portfolio</h1>
+            </div>
+            <div class="grid-item">
+                <p>"We assist in real estate <img src="assets/global-estate.png" alt=""> marketing and sales."</p>
+                <h1>RealState</h1>
+            </div>
+            <div class="grid-item">
+                <p>"Our web stores <img src="assets/webstore.png" alt=""> are designed for success."</p>
+                <h1>WebStores</h1>
+            </div>
+            <div class="grid-item">
+                <p>"We create Shopify <img src="assets/shopify.png" alt=""> stores that stand out."</p>
+                <h1>Shopify</h1>
+            </div>
+            <div class="grid-item">
+                <p>"Our WordPress <img src="assets/wordpress.png" alt=""> sites are professionally designed."</p>
+                <h1>WordPress</h1>
+            </div>
+            <div class="grid-item">
+                <p>"We develop mobile apps <img src="assets/mobile-app.png" alt=""> that impress."</p>
+                <h1>Mobile App</h1>
+            </div>
+            <div class="grid-item">
+                <p>"Our booking systems <img src="assets/booking.png" alt=""> are user-friendly."</p>
+                <h1>Bookings</h1>
+            </div>
+            <div class="grid-item">
+                <p>"We design travel <img src="assets/travel-luggage.png" alt=""> websites that inspire."</p>
+                <h1>Travel</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="page5">
+        <h1>those who trust <br>
+            we showed our best talents
+        </h1>
+        <div>
+            <img src="assets/tweet1.png" alt="">
+            <img src="assets/tweet2.png" alt="">
+
+        </div>
+    </section>
+    <section class="page6">
+
+        <h1 class="textp">Projects of Value <br>
+            gained attention of clients
+        </h1>
+        <p class="textp">An advanced AI assistant that leverages NLP and machine learning to provide real-time
+            responses, automate tasks, and improve productivity. The system integrates with various APIs to handle
+            scheduling, reminders, and personalized recommendations</p>
+    </section>
+
+    <section class="page7">
+        <h2>Good Projects</h2>
+        <div class="aniholder">
+            <div class="cardx" style="background-color: #FF8A66;">
+
+                <!-- <div class="show">
+                    <iframe src="https://theenticemedia.com/" width="100%" height="100%" frameborder="0"
+                        allowfullscreen></iframe>
+                </div> -->
+                <div class="conte">
+                    <h3>Room Finding App</h3>
+                    <h4>Real State Marketing</h4>
+                    <p>Our Room Finding App helps you find the perfect room for rent with ease. Whether you're looking
+                        for a short-term stay or a long-term rental, our app has got you covered.</p>
+                    <button onclick="window.open('https://greenbook1.github.io/')">
+                        <img src="assets/link.png" alt="Find Room Icon">
+                        Find a Room
+                    </button>
+                    <p>feedback</p>
+                    <!-- <audio controls>
+                        <source src="assets/feedback.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio> -->
+                    <div class="feedback"> <img src="assets/internet.png" alt="">
+                        <p>"The app is fantastic! It has made finding a room so much easier and more efficient. Highly recommend!"</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="cardx" style="background-color: #58da77;">
+                <!-- <div class="show">
+                    <iframe src="https://theenticemedia.com/" width="100%" height="100%" frameborder="0"
+                        allowfullscreen></iframe>
+                </div> -->
+                <div class="conte">
+                    <h3>Marketing Agency Website</h3>
+                    <h4>UI/UX website design</h4>
+                    <p>Our Marketing Agency Website offers top-notch UI/UX design services to help your business stand
+                        out. We create visually appealing and user-friendly websites that attract and retain customers.
+                    </p>
+                    <button onclick="window.open('https://theenticemedia.com/')">
+                        <img src="assets/link.png" alt="Find Room Icon">
+                        Visit Site
+                    </button>
+                    <p>feedback</p>
+                    <!-- <audio controls>
+                        <source src="assets/feedback.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio> -->
+                    <div class="feedback"> <img src="assets/internet.png" alt="">
+                        <p>"The website design is outstanding! Our clients love the new look and feel. Great job!"</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cardx" style="background-color: #668AFF;">
+                <!-- <div class="show">
+                    <iframe src="https://theenticemedia.com/" width="100%" height="100%" frameborder="0"
+                        allowfullscreen></iframe>
+                </div> -->
+                <div class="conte">
+                    <h3>WooCommerce App</h3>
+                    <h4>WordPress and WooCommerce</h4>
+                    <p>Our WooCommerce App provides seamless integration with WordPress, allowing you to manage your
+                        online store effortlessly. From product listings to payment processing.</p>
+                    <button  onclick="window.open('https://computronicslab.com/')">
+                        <img src="assets/link.png" alt="Find Room Icon">
+                        View Site
+                    </button>
+                    <p>feedback</p>
+                    <!-- <audio controls>
+                        <source src="assets/feedback.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio> -->
+                    <div class="feedback"> <img src="assets/internet.png" alt="">
+                        <p>"The WooCommerce App has transformed our online store. It's user-friendly and efficient. Highly recommended!"</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cardx" style="background-color: #FF66C2;">
+                <!-- <div class="show">
+                    <iframe src="https://theenticemedia.com/" width="100%" height="100%" frameborder="0"
+                        allowfullscreen></iframe>
+                </div> -->
+                <div class="conte">
+                    <h3>Creative Landing Pages</h3>
+                    <h4>Portfolio websites</h4>
+                    <p>Our Creative Landing Pages are designed to showcase your portfolio in the best light. With
+                        stunning visuals and intuitive navigation, we help you make a lasting impression on potential
+                        clients and employers.</p>
+                    <button onclick="window.open('https://syntaxshiva.github.io/MyPorfolio/')">
+                        <img src="assets/link.png" alt="Find Room Icon">
+                        see more
+                    </button>
+                    <p>feedback</p>
+                    <div class="feedback"> <img src="assets/internet.png" alt="">
+                        <p>"This project exceeded our expectations! The team was professional and delivered on time."
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="cardx" style="background-color: #4fc9c1;">
+                <h1>AND MANY MORE</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="contact" class="contentr">
+        <h1></h1>
+        <div>
+            <div class="info">
+                <h1>Its_Deligh</h1>
+                <p>Empowering Innovation, Elevating Success</p>
+                <h6>© 2024 its Deligh. All Rights Reserved.</h6>
+            </div>
+            <div class="cont">
+                <h3>contact</h3>
+                <p>syntaxshiva@gmail.com</p>
+                <p>+917706989915</p>
+
+                <hr>
+                <h3>Follow Us</h3>
+                <p onclick="window.open('https://www.instagram.com/its_deligh/')">instagram</p>
+                <p onclick="window.open('https://wa.me/+919450129733?text=' + encodeURIComponent('Hello! i need a service'), '_blank')">whatsapp</p>
+                <p>policies</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="animation.js"></script>
+
+</html>

@@ -1,0 +1,429 @@
+::-webkit-scrollbar {
+    width: 5px;  /* Adjust scrollbar width */
+  }
+  
+  /* Scrollbar Thumb (Draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #3498db; /* Change color */
+    border-radius: 10px;  /* Rounded edges */
+  }
+  
+  /* Scrollbar Track (Background) */
+  ::-webkit-scrollbar-track {
+    background: #fefae0; /* Change track color */
+  }
+  
+  /* On Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+  }
+body {
+    background-color: #fefae0; /* Light background color */
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Ubuntu';
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    
+    width: 200px;
+    border-style: none;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #333;
+    font-size: 2em; /* Dark text color */
+}
+.category-btn {
+     /* Light button background */
+     background-color: black;
+    padding: 15px 20px;
+    margin: 5px 0;
+    border: none;
+    color: yellow;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: .2s ease-in-out;
+}
+.category-btn:hover {
+    background-color: #2e2e2e;
+    color: white; /* Slightly darker button background on hover */
+}
+.category-btn1 {
+    /* Light button background */
+    background-color: rgb(255, 0, 115);
+   padding: 15px 20px;
+   margin: 5px 0;
+   border: none;
+   color: white;
+   font-weight: bold;
+   border-radius: 15px;
+   cursor: pointer;
+   width: 100%;
+   text-align: left;
+   transition: .2s ease-in-out;
+}
+.category-btn1:hover {
+   background-color: #2e2e2e;
+   color: white; /* Slightly darker button background on hover */
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    max-height: 100vh;
+    overflow: auto;
+}
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#search {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product-card {
+     /* Light card background */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.uicard {
+    height: 400px;
+    width: 400px;
+    background-color: white; /* Unique background color for uicard */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+}
+.uicard:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.uicard .view{
+    height: 80%;
+    width: 100%;
+   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    iframe{
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: none;
+    }
+}
+
+.uicard .details{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 20%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        padding: 20px;
+        max-width: 70%;
+        font-size: 1em;
+    }
+    form{
+        margin-right: 10px;
+    }
+    p{
+        font-size: 2em;
+        padding: 10px;
+        margin-right: 20px;
+        background-color: rgb(255, 0, 174);
+        font-weight: bolder;
+        box-shadow: 3px 3px 1px rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+    }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+    body{height: fit-content;}
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    header {
+        flex-direction: column;
+    }
+    #search {
+        width: 100%;
+    }
+
+    .content {
+        
+        flex: 1;
+        padding: 20px;
+        height: auto;
+        overflow: visible;
+        
+        
+    }
+    .grid {
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .uicard {
+        height: 350px;
+        width: 100%;
+        background-color: white; /* Unique background color for uicard */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .category-btn {
+       
+       width: fit-content;
+       
+   }
+   .category-btn1 {
+       
+    width: fit-content;
+    
+}
+    
+}
+@media (min-width: 501px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    #search {
+        width: 100%;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+        height: fit-content;
+        max-height: auto;
+        overflow: visible;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .uicard .view{
+        height: 70%;
+        width: 100%;}
+    .uicard {
+        height: 350px;
+        width: 45vw;
+        background-color: white; /* Unique background color for uicard */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+    .uicard .details{
+        flex-direction: column;
+        height: 30%;
+        justify-content:center;
+        align-items: center;
+        h1{
+            
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 5px;
+            
+        }
+        form{
+            margin: 0;
+        }
+    }    
+
+    .category-btn {
+       
+       width: fit-content;
+       
+   }
+   .category-btn1 {
+       
+    width: fit-content;
+    
+}
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    #search {
+        width: 100%;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+        height: fit-content;
+        max-height: auto;
+        overflow: visible;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .uicard {
+        height: 350px;
+        width: 32vw;
+        background-color: white; /* Unique background color for uicard */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+    .uicard .view{
+        height: 70%;
+        width: 100%;}
+.uicard .details{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    
+
+    h1{
+        margin: 0;
+        max-width: 100%;
+        
+        padding: 0;
+        margin-bottom: 5px;
+    }
+}
+    .category-btn {
+       
+       width: fit-content;
+       
+   }
+   .category-btn1 {
+       
+    width: fit-content;
+    
+}
+    
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    #search {
+        width: 100%;
+    }
+
+    .content {
+        flex: 1;
+        padding: 20px;
+        height: fit-content;
+        max-height: auto;
+        overflow: visible;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .uicard {
+        height: 350px;
+        width: 27vw;
+        background-color: white; /* Unique background color for uicard */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .category-btn {
+       
+       width: 100%;
+       
+   }
+   .category-btn1 {
+       
+    width: 100%;
+    
+}
+    
+}
+
+
